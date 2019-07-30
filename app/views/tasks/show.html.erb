@@ -1,0 +1,9 @@
+<h1>Show Page</h1>
+
+  <h2><%= @task.details %></h2>
+  <%= @task.completed %>
+  <%= check_box :to, @task.completed %>
+  <br>
+<%= link_to "Edit page", edit_task_path(@task.id) %>
+<br>
+<%= link_to "Home page", tasks_path %>
